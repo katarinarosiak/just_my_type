@@ -1,0 +1,381 @@
+ 
+/*colors*/
+/*red: ed4266
+green: #24edcd;
+darkGreen: #0f2a25
+darkRed: 561c25*/
+
+
+
+ body {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	font-family: OCRAEXT;
+	overflow: hidden;
+}
+
+h4 {
+	color: #24edcd;
+	padding: 6px;
+	letter-spacing: 2px;
+	font-size: 40px;
+}
+
+p {
+	font-size: 22px;
+	letter-spacing: 2px;
+}
+
+button {
+	font-family: OCRAEXT;
+}
+
+ul {
+	font-family: OCRAEXT;
+	color: #24edcd;
+	list-style: none;
+}
+
+
+@font-face {
+  font-family: ComputerRobot;
+  src: url(fonts/robot.ttf);
+}
+
+@font-face {
+  font-family: OCRAEXT;
+  src: url(fonts/ocraext.ttf);
+}
+
+
+/*navbar*/
+.navbar {
+	border-bottom: 0.7px solid #24edcd;
+	width: 100%;
+	height: 47px;
+	box-sizing: border-box;
+}
+
+.logo {
+	color: #24edcd;
+	float: left;
+	margin: 10px 14px;
+	font-size: 30px;
+}
+
+.fas {
+	position: absolute;
+	top: 8px;
+	right: 20px;
+	color: #24edcd;
+	transition-duration: 1s;
+	z-index: 999;
+
+}
+
+/*animate on hover*/
+.fas:hover{
+	transform: rotate(20deg);
+
+}
+
+.menu {
+	position: absolute;
+	width: 250px;
+	height: 300px;
+	right: 0px;
+	overflow: auto;
+	background-color: black;
+	visibility: hidden;
+	border: #24edcd 0.5px solid;
+	top: 47px;
+
+}
+
+
+.visible {
+	visibility: visible;
+	
+}
+
+
+.menu ul{
+	position: absolute;
+	top: 50px;
+	right: 70px;
+
+}
+
+.menu ul li {
+	font-size: 20px;
+	padding-bottom: 20px;
+
+}
+
+
+
+/*toggle swith*/
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0f2a25;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 1px;
+  background-color: #24edcd;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #0f2a25;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+/*radio buttons*/
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #0f2a25; 
+  border-radius: 50%;
+}
+
+
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #24edcd;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+
+.flex-container {
+	display:flex;
+}
+
+
+.center {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width: 100%;
+}
+
+#keyboardUpper {
+	margin-left: 159.5px;
+}
+
+/* start button */
+.button {
+	width: 95px;
+	height: 48px;
+	background-color: #24edcd;
+	color:  #0f2a25;
+	margin-top: 4px;
+	border-radius: 13px 0px 13px 0px;
+	-moz-border-radius: 13px 0px 13px 0px;
+	-webkit-border-radius: 13px 0px 13px 0px;
+	outline: none;
+
+}
+
+.instructions {
+
+	height: 47px;
+	width: 650px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin: 7px;
+	background-color: #0f2a25; 
+	color: #24edcd;
+}
+
+
+.text {
+	height: 50px;
+	width: 750px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin: 10px;
+	background-color: #0f2a25;
+	color: #24edcd;
+	font-size: 22px;
+	padding: 10px;
+	letter-spacing: 3px;
+	overflow: hidden;
+
+}
+
+.userInput {
+	border: 0.5px solid #24edcd;
+	height: 50px;
+	width: 750px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin: 5px;
+	background-color: #0f2a25;
+	color: #24edcd;
+	font-size: 22px;
+	padding: 10px;
+	letter-spacing: 2px;
+	overflow: hidden;
+	font-family: OCRAEXT;
+
+}
+
+
+
+.highlight {
+	border: 0.5px solid #24edcd; 
+}
+
+
+
+
+.buttonKey {
+	width: 30px;
+	height: 30px;
+	background-color: #0f2a25;
+	color: #24edcd;
+	border-radius: 13px 0px 13px 0px;
+	-moz-border-radius: 13px 0px 13px 0px;
+	-webkit-border-radius: 13px 0px 13px 0px;
+	border: 0.7px solid #24edcd;
+	text-align: center;
+	transition: 500ms;
+	outline: none;
+	margin: 5px;
+}
+
+.space{
+	width: 700px;
+	height: 30px;
+	background-color: #0f2a25;
+	color: #24edcd;
+	border-radius: 13px 0px 13px 0px;
+	-moz-border-radius: 13px 0px 13px 0px;
+	-webkit-border-radius: 13px 0px 13px 0px;
+	border: 0.7px solid #24edcd;
+	text-align: center;
+	transition: 500ms;
+	outline: none;
+	margin: 5px;
+}
+
+.buttonKey:focus {
+	border: 1.3px solid #24edcd;
+	
+}
+
+.keyHighlight {
+	color: #0f2a25;
+	background-color: #24edcd;
+}
+
+.keyboard {
+	display: flex;
+	width: 650px;
+	justify-content: center;
+
+}
+
+#space {
+flex-grow: 1;
+}
+
+#shift {
+flex-grow: 1;
+}
+
+.hide {
+	display: none;
+}
+
+

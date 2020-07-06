@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+		<script src="https://kit.fontawesome.com/5eec521cdd.js" crossorigin="anonymous"></script>
+	<title>Just My Typy</title>
+</head>
+<body>
+<!-- navbar starts here -->
+	<nav class="navbar">
+		<label class="logo">Just My Type</label><div><i class="fas fa-cog fa-2x"></i></div>
+			<div class="menu">
+				<ul>
+					<li>Sound
+					  	<label class="switch">
+	  						<input type="checkbox" id="soundOff">
+	  							<span class="slider round"></span>
+						</label> 
+					</li>
+					<li>Level:</li>
+						<form>
+							<label class="container">Easy
+								<input type="radio" checked="checked" name="radio" id="levelEasy">
+								  <span class="checkmark"></span>
+								</label>
+							<label class="container">Medium
+								  <input type="radio" name="radio" id="levelMedium">
+								  <span class="checkmark"></span>
+							</label>
+							<label class="container">Hard
+								  <input type="radio" name="radio" id="levelHard">
+								  <span class="checkmark"></span>
+							</label>
+						</form>
+				</ul>
+		</div>	
+	</nav>
+<!-- navbar ends here -->
+	
+	<!-- start button -->
+	<section class="textAndButtons">
+		<figure class="center">
+			<button class="button" id="start">Start</button>
+		</figure>
+		<!-- instructions starts here -->
+		<section class="center">
+			<div class="instructions"><p id="instructions">Click 'start' to begin</p></div>
+		</section>
+		<!-- instructions ends here -->
+		<!--  text area starts here -->
+		<section class="center">
+			<div class="text"><p class="textParagraph"> </p></div>
+		</section>
+		<!-- text area ends here -->
+		<!-- user input area starts here -->
+		<section class="center">
+			<input class="userInput" id="userInput" type="text" name="userInput" autofocus/>
+		</section>
+		<!--  user input area ends here -->
+	</section>
+
+	<main>
+	<!-- keyboard starts here -->
+	<div class="center">
+		<section class="container hide" id="keyboardUpper">		
+			<!-- first row -->
+			<section class="firstRow keyboard">
+						<button class="buttonKey" id="k126" value="~">~</button>
+						<button class="buttonKey" id="k33" value="!">!</button>
+						<button class="buttonKey" id="k64" value="@">@</button>
+						<button class="buttonKey" id="k35" value="#">#</button>
+						<button class="buttonKey" id="k36" value="$">$</button>
+						<button class="buttonKey" id="k37" value="%">%</button>
+						<button class="buttonKey" id="k94" value="^">^</button>
+						<button class="buttonKey" id="k38" value="&">&</button>
+						<button class="buttonKey" id="k42" value="*">*</button>
+						<button class="buttonKey" id="k40" value="(">(</button>
+						<button class="buttonKey" id="k41" value=")">)</button>
+						<button class="buttonKey" id="k95" value="_">_</button>
+						<button class="buttonKey" id="k43" value="+">+</button>
+			</section>
+				<!-- second row -->
+			<section class="secondRow keyboard">
+						<button class="buttonKey" id="k81" value="Q">Q</button>
+						<button class="buttonKey" id="k87" value="W">W</button>
+						<button class="buttonKey" id="k69" value="E">E</button>
+						<button class="buttonKey" id="k82" value="R">R</button>
+						<button class="buttonKey" id="k84" value="T">T</button>
+						<button class="buttonKey" id="k89" value="Y">Y</button>
+						<button class="buttonKey" id="k85" value="U">U</button>
+						<button class="buttonKey" id="k73" value="I">I</button>
+						<button class="buttonKey" id="k79" value="O">O</button>
+						<button class="buttonKey" id="k80" value="P">P</button>
+						<button class="buttonKey" id="k123" value="{">{</button>
+						<button class="buttonKey" id="k125" value="}">}</button>
+						<button class="buttonKey" id="k124" value="|">|</button>
+			</section>
+				<!-- third row -->
+			<section class="thirdRow keyboard">
+						<button class="buttonKey " id="k65" value="A">A</button>
+						<button class="buttonKey " id="k83" value="S">S</button>
+						<button class="buttonKey " id="k68" value="D">D</button>
+						<button class="buttonKey " id="k70" value="F">F</button>
+						<button class="buttonKey " id="k71" value="G">G</button>
+						<button class="buttonKey " id="k72" value="H">H</button>
+						<button class="buttonKey " id="k74" value="J">J</button>
+						<button class="buttonKey " id="k75" value="K">K</button>
+						<button class="buttonKey " id="k76" value="L">L</button>
+						<button class="buttonKey " id="k58" value=":">:</button>
+						<button class="buttonKey " id="k34" value=' " '>"</button>
+			</section>
+					<!-- fourth row -->
+			<section class="fourthRow keyboard">		
+						<button class="buttonKey " id="shift">Shift</button>
+						<button class="buttonKey " id="k90" value="Z">Z</button>
+						<button class="buttonKey " id="k88" value="X">X</button>
+						<button class="buttonKey " id="k67" value="C">C</button>
+						<button class="buttonKey " id="k86" value="V">V</button>
+						<button class="buttonKey " id="k66" value="B">B</button>
+						<button class="buttonKey " id="k78" value="N">N</button>
+						<button class="buttonKey " id="k77" value="M">M</button>
+						<button class="buttonKey " id="k60" value="<">&#60</button>
+						<button class="buttonKey " id="k62" value=">">&#62</button>
+						<button class="buttonKey " id="k63" value="?">?</button>
+						<button class="buttonKey " id="shift">Shift</button>
+			</section>
+
+			<section class="fifthRow keyboard">
+				<button class="buttonKey" id="space" value="  "> SPACE</button>
+			</section>
+
+		</section>
+	</section>
+		<!-- upper keyboard ends here -->
+
+
+			<!-- lower keyboards starts here -->
+		<section class="center">
+			<section id="keyboardLower">	
+				<section class="firstRow keyboard">
+				<!-- first row -->
+					<button class="buttonKey" id="k96" value="`">`</button>
+					<button class="buttonKey" id="k49" value="1">1</button>
+					<button class="buttonKey" id="k50" value="2">2</button>
+					<button class="buttonKey" id="k51" value="3">3</button>
+					<button class="buttonKey" id="k52" value="4">4</button>
+					<button class="buttonKey" id="k53" value="5">5</button>
+					<button class="buttonKey" id="k54" value="6">6</button>
+					<button class="buttonKey" id="k55" value="7">7</button>
+					<button class="buttonKey" id="k56" value="8">8</button>
+					<button class="buttonKey" id="k57" value="9">9</button>
+					<button class="buttonKey" id="k48" value="0">0</button>
+					<button class="buttonKey" id="k45" value="-">-</button>
+					<button class="buttonKey" id="k61" value="=">=</button>
+				</section>
+				<!-- second row -->
+				<section class="secondRow keyboard">
+					<button class="buttonKey" id="k113" value="q">q</button>
+					<button class="buttonKey" id="k119" value="w">w</button>
+					<button class="buttonKey" id="k101" value="e">e</button>
+					<button class="buttonKey" id="k114" value="r">r</button>
+					<button class="buttonKey" id="k116" value="t">t</button>
+					<button class="buttonKey" id="k121" value="y">y</button>
+					<button class="buttonKey" id="k117" value="u">u</button>
+					<button class="buttonKey" id="k105" value="i">i</button>
+					<button class="buttonKey" id="k111" value="o">o</button>
+					<button class="buttonKey" id="k112" value="p">p</button>
+					<button class="buttonKey" id="k91" value="[">[</button>
+					<button class="buttonKey" id="k93" value="]">]</button>
+					<button class="buttonKey" id="k92" value="\">\</button>
+				</section>
+				<!-- third row -->
+				<section class="thirdRow keyboard">
+					<button class="buttonKey" id="k97" value="a">a</button>
+					<button class="buttonKey" id="k115" value="s">s</button>
+					<button class="buttonKey" id="k100" value="d">d</button>
+					<button class="buttonKey" id="k102" value="f">f</button>
+					<button class="buttonKey" id="k103" value="g">g</button>
+					<button class="buttonKey" id="k104" value="h">h</button>
+					<button class="buttonKey" id="k106" value="j">j</button>
+					<button class="buttonKey" id="k107" value="k">k</button>
+					<button class="buttonKey" id="k108" value="l">l</button>
+					<button class="buttonKey" id="k59" value=";">;</button>
+					<button class="buttonKey" id="k39" value="'">'</button>
+				</section>
+				<!-- fourth row -->
+				<section class="fifthRow keyboard">
+					<button class="buttonKey " id="shift">Shift</button>
+					<button class="buttonKey" id="k122" value="z">z</button>
+					<button class="buttonKey" id="k120" value="x">x</button>
+					<button class="buttonKey" id="k99" value="c">c</button>
+					<button class="buttonKey" id="k118" value="v">v</button>
+					<button class="buttonKey" id="k98" value="b">b</button>
+					<button class="buttonKey" id="k110" value="n">n</button>
+					<button class="buttonKey" id="k109" value="m">m</button>
+					<button class="buttonKey" id="k44" value=",">,</button>
+					<button class="buttonKey" id="k46" value=".">.</button>
+					<button class="buttonKey" id="k47" value="/">/</button>
+					<button class="buttonKey " id="shift">Shift</button>
+				</section>
+				<!-- fifth row -->
+				<section class="fifthRow keyboard">
+					<button class="space" id="k32" value="  "> SPACE</button>
+				</section>
+			</section>
+		</section>
+					<!-- lower keyboards starts here -->
+	</main>
+
+		<script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
