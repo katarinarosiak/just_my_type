@@ -5,8 +5,7 @@ green: #24edcd;
 darkGreen: #0f2a25
 darkRed: 561c25*/
 
-
-
+/* main */
  body {
 	margin: 0;
 	padding: 0;
@@ -37,7 +36,7 @@ ul {
 	list-style: none;
 }
 
-
+/* fonts */
 @font-face {
   font-family: ComputerRobot;
   src: url(fonts/robot.ttf);
@@ -93,7 +92,7 @@ ul {
 
 }
 
-
+/* visibility of the settings menu */
 .visible {
 	visibility: visible;
 	
@@ -112,7 +111,6 @@ ul {
 	padding-bottom: 20px;
 
 }
-
 
 
 /*toggle swith*/
@@ -214,7 +212,6 @@ input:checked + .slider:before {
 }
 
 
-
 /* When the radio button is checked, add a blue background */
 .container input:checked ~ .checkmark {
   background-color: #24edcd;
@@ -262,7 +259,7 @@ input:checked + .slider:before {
 	outline: none;
 
 }
-
+/* area with instructions */
 .instructions {
 
 	height: 47px;
@@ -275,7 +272,7 @@ input:checked + .slider:before {
 	color: #24edcd;
 }
 
-
+/* area with text to upload */
 .text {
 	height: 50px;
 	width: 750px;
@@ -291,7 +288,7 @@ input:checked + .slider:before {
 	overflow: hidden;
 
 }
-
+/* user input area */
 .userInput {
 	border: 0.5px solid #24edcd;
 	height: 50px;
@@ -311,14 +308,11 @@ input:checked + .slider:before {
 }
 
 
-
+/* highlight of letters */
 .highlight {
 	border: 0.5px solid #24edcd; 
 }
-
-
-
-
+/* keyboard keys */
 .buttonKey {
 	width: 30px;
 	height: 30px;
@@ -374,6 +368,7 @@ flex-grow: 1;
 flex-grow: 1;
 }
 
+/* hide keyboard */
 .hide {
 	display: none;
 }
