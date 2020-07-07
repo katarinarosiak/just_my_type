@@ -68,18 +68,6 @@ $(document).ready(function () {
 				};
 			});
 		
-		// $(document).mouseup(e => {
-		// 	if (!('$menu').is(e.target) // if the target of the click isn't the container...
-		// 	&& ('$menu').has(e.target).length === 0) // ... nor a descendant of the container
-		// 	{
-		// 	  ('$menu').removeClass('visible');
-		//    }
-		//   });
-
-
-
-
-
 
 	//turn off/on the sound                       /////DOESNT WORK
 		$('#soundOff').click(function(){	
@@ -247,10 +235,6 @@ $(document).ready(function () {
 		currentKey = keys[currentLetter];
 		$(currentKey).addClass('keyHighlight'); 
 
-		//
-		// let userInput = $('.userInput').val();
-		// console.log(userInput);
-		//
 		if(index === gameLevel.length){
 			finish();
 		}
@@ -262,12 +246,7 @@ $(document).ready(function () {
 		return inWhat.slice(0, index) + '<span class="highlight">' + inWhat.slice(index,index+1) + '</span>' + inWhat.slice(index + 1); 
 	};
 
-	//function that checks if finished
-	// function ifFinished(){
-	// 	if(currentLetter === gameLevel[-1]{
-	// 		console.group('ok');
-	// 	}
-	// }
+
 	//function when the sentence is finsihed
 	function finish(){
 
@@ -287,12 +266,6 @@ $(document).ready(function () {
 		//print new instruction text on the screen
 		$('.instructions').append(`<p id="instructions">Congratulation! You got ${wpm} wpm. Press start to play again.</p>`);
 		
-
-		//block all the keys extept start 
-		//play winner sound 
-		//count accuaracy
-		//count total time
-		//count words per minute 
 	}
 
 	function reset(){
@@ -309,38 +282,5 @@ $(document).ready(function () {
 
 	//end
 });
-
-
-
-
-
-
-//if correct print in green, change current letter to the next index change keyboard highlight to the current letter 
-
-	//separate letters with span 
-		// let separatedText = separate('.textParagraph');
-		
-		//choose the first letter from the text and assign it to let currentLetter
-
-				
-	//hihlight the key on the keyboard according to the first letter (let highlightedKey)
-		//create a class: good, wrong 
-		//
-
-		//find the first letter input <span id="letter"</span> before and after the index of 
-	//user press keyboard key. save to var. check index of the letter in the string
-
-	//according to the index of the user input letter slice the letters from the text
-
-	//compare the letters 
-
-	//if the equal go ahead if not equal make the last letter red and make a sound "uncorrect"
-
-	//if text === user imput print congratulation and block the screen 
-
-
-
-	//what i need: function function block(what), function clear(what), 
-	//function compare(what, withWhat), 
 
 
